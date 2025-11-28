@@ -225,7 +225,7 @@ echo "Vless-xhttp-reality-enc端口：$port_xh"
 cat >> "$HOME/agsbx/xr.json" <<EOF
     {
       "tag":"xhttp-reality",
-      "listen": "::",
+      "listen": "0.0.0.0",
       "port": ${port_xh},
       "protocol": "vless",
       "settings": {
@@ -282,7 +282,7 @@ fi
 cat >> "$HOME/agsbx/xr.json" <<EOF
     {
       "tag":"vless-xhttp",
-      "listen": "::",
+      "listen": "0.0.0.0",
       "port": ${port_vx},
       "protocol": "vless",
       "settings": {
@@ -329,7 +329,7 @@ fi
 cat >> "$HOME/agsbx/xr.json" <<EOF
     {
       "tag":"vless-ws",
-      "listen": "::",
+      "listen": "0.0.0.0",
       "port": ${port_vw},
       "protocol": "vless",
       "settings": {
@@ -370,7 +370,7 @@ echo "Vless-tcp-reality-v端口：$port_vl_re"
 cat >> "$HOME/agsbx/xr.json" <<EOF
         {
             "tag":"reality-vision",
-            "listen": "::",
+            "listen": "0.0.0.0",
             "port": $port_vl_re,
             "protocol": "vless",
             "settings": {
